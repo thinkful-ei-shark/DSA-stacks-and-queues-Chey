@@ -1,4 +1,4 @@
-;class _Node {
+class _Node {
   constructor(data, next) {
     this.data = data;
     this.next = next;
@@ -25,8 +25,8 @@ class Queue {
     }
     const node = this.first;
     this.first = this.first.next;
-    if(node === this.last){
-      this.last = null'
+    if (node === this.last) {
+      this.last = null;
     }
     return node.value;
   }
